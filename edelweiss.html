@@ -8,7 +8,7 @@
 <body>
 <script>
   // stilusok
-  document.body.style.background = "black";
+  document.body.style.backgroundImage = "url('background.jpg')";
   document.body.style.color = "white";
   document.body.style.fontFamily = "Verdana, sans-serif";
 
@@ -44,7 +44,12 @@
     { name: "Behind Our Masks", type: "Full-length ", year: 2020 },
     { name: "Night of the Long Pipes", type: "Full-length ", year: 2021 },
     { name: "Nomen Est Omen", type: "Full-length ", year: 2022 },
+    { name: "Kensho", type: "Full-length ", year: 2026 },
     { name: "White Flower Power", type: "Demo ", year: 2018 },
+    { name: "Fire", type: "Demo ", year: 2018 },
+    { name: "Yeast of the mind", type: "Demo ", year: 2018 },
+    { name: "White Flower Power / Yeast of the Mind", type: "Combined EP ", year: 2019 },
+    { name: "Songs for the New Album", type: "Promotional preview single/EP", year: 2019},
   ];
 
   const heading = document.createElement("h2");
@@ -66,26 +71,28 @@
 
     // --- középső doboz ---
 const box = document.createElement("div");
-box.style.border = "4px solid red";
+box.style.border = "4px solid #5d10e3";
 box.style.width = "800px";
 box.style.height = "400px";
-box.style.margin = "20px auto";
+box.style.margin = "left";
 box.style.padding = "20px";
-box.style.color = "red";
+box.style.color = "#5d10e3";
 
-// cím (ez lett a régi textContent)
+// cim
 const boxTitle = document.createElement("h3");
 boxTitle.textContent = "This is a simple story about the band and other relevant information.";
 box.appendChild(boxTitle);
 
-// bekezdés
+// bekezdes (fo)
 const p1 = document.createElement("p");
-p1.textContent = "Itt jön az első bekezdés a zenekarról.";
+p1.style.textAlign = "justify";
+p1.textContent = "Formed in 2018 in Budapest, Edelweiss emerged as a mysterious, highly secretive entity within the specialized subgenre often dubbed Magick Metal or heavy psychedelic occult rock. They trace a lot of their sonic identity to the pioneering Australian band Black Magick SS, popularizing a distinct blend of ultra-lo-fi production, traditional doom metal riffs, and prominent 1970s-style The Doors keyboard organ tones. The band operates largely in the shadows, shunning traditional media and mainstream promotion, which has elevated their cult status in the international underground metal community. Their story is told primarily through their prolific output of cassettes and vinyl records, heavily backed by a dedicated international fan base and underground record labels.";
 box.appendChild(p1);
 
-// második bekezdés
+// masodik bekezdes
 const p2 = document.createElement("p");
-p2.textContent = "Ez a második bekezdés.";
+p2.style.textAlign = "justify";
+p2.textContent = "The Matango Alter Ego: To safely distribute their tracks on streaming services and global digital storefronts, the band releases their digital music under the moniker Matango on Spotify/YouTube. Provocative Symbolism: The band’s lyrical themes and imagery blend occultism, psychedelic drug culture, and highly controversial radical political imagery (reminiscent of World War II aesthetics). Much like other bands in the magick metal scene, online listeners frequently debate whether this edge is purely reactionary shock value or aesthetic choice, as their songs lack literal ideological preaching.";
 box.appendChild(p2);
 
 document.body.appendChild(box);
