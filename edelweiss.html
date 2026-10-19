@@ -103,20 +103,22 @@ box2.style.width = "800px";
 box2.style.height = "400px";
 box2.style.padding = "20px";
 box2.style.color = "#5d10e3";
-box2.style.margin = "right: auto";
+box2.style.float = "right";
+box2.style.marginRight = "0px";
+box2.style.marginTop = "-447px";
 
 const boxTitle2 = document.createElement("h3");
-boxTitle2.textContent = "Második doboz címe";
+boxTitle2.textContent = "Matango: The Other Face of Edelweiss";
 box2.appendChild(boxTitle2);
 
 const p3 = document.createElement("p");
 p3.style.textAlign = "justify";
-p3.textContent = "Ide jön az új szöveg.";
+p3.textContent = "Matango: The Other Face of Edelweiss. Matango is the alternate name associated with the Hungarian doom metal band Edelweiss, providing another identity for their music on digital platforms. The name may reference the 1963 Japanese horror film Matango, also known as Attack of the Mushroom People, which follows a group of people encountering strange, hallucinogenic fungi on a mysterious island. Its surreal atmosphere and unsettling imagery fit the band's psychedelic and occult-inspired aesthetic. Under the Matango name, tracks appear with unusual alternative titles, adding another layer of mystery for fans exploring the band's discography. While Edelweiss is closely associated with underground releases, obscure artwork, and lo-fi psychedelic doom, Matango offers listeners another way to discover their music online. The exact reasons behind the use of this alias remain unclear, making it an intriguing part of the band's underground identity.";
 box2.appendChild(p3);
 
-const p4 = document.createElement("p");
+const p4 = document.createElement("p"); 
 p4.style.textAlign = "justify";
-p4.textContent = "Ide a második bekezdés.";
+p4.innerHTML = 'Discover Edelweiss\'s music under the name Matango on streaming platforms. Listen on <a href="https://open.spotify.com/artist/7pauWUbndTMa6cYxvws1sM" target="_blank" style="color: red;" style="text-decoration: underline;">Spotify</a> or explore their music and videos on <a href="https://www.youtube.com/channel/UCs9CcEDXalF0sI_Z2HChreg" target="_blank" style="color: red;" style="text-decoration: underline;">YouTube</a>.';
 box2.appendChild(p4);
 
 document.body.appendChild(box2);
