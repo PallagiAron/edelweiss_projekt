@@ -69,7 +69,7 @@
   }
 
 
-    // --- középső doboz ---
+// bal doboz
 const box = document.createElement("div");
 box.style.border = "4px solid #5d10e3";
 box.style.width = "800px";
@@ -95,9 +95,31 @@ p2.style.textAlign = "justify";
 p2.textContent = "The Matango Alter Ego: To safely distribute their tracks on streaming services and global digital storefronts, the band releases their digital music under the moniker Matango on Spotify/YouTube. Provocative Symbolism: The band’s lyrical themes and imagery blend occultism, psychedelic drug culture, and highly controversial radical political imagery (reminiscent of World War II aesthetics). Much like other bands in the magick metal scene, online listeners frequently debate whether this edge is purely reactionary shock value or aesthetic choice, as their songs lack literal ideological preaching.";
 box.appendChild(p2);
 
-
-
 document.body.appendChild(box);
+
+const box2 = document.createElement("div");
+box2.style.border = "4px solid #5d10e3";
+box2.style.width = "800px";
+box2.style.height = "400px";
+box2.style.padding = "20px";
+box2.style.color = "#5d10e3";
+box2.style.margin = "right: auto";
+
+const boxTitle2 = document.createElement("h3");
+boxTitle2.textContent = "Második doboz címe";
+box2.appendChild(boxTitle2);
+
+const p3 = document.createElement("p");
+p3.style.textAlign = "justify";
+p3.textContent = "Ide jön az új szöveg.";
+box2.appendChild(p3);
+
+const p4 = document.createElement("p");
+p4.style.textAlign = "justify";
+p4.textContent = "Ide a második bekezdés.";
+box2.appendChild(p4);
+
+document.body.appendChild(box2);
   
 </script>
 </body>
