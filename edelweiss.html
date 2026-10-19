@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
   <title>Edelweiss</title>
 </head>
 <body>
@@ -61,6 +62,34 @@
       <td>${album.year}</td>`;
     table.appendChild(row);
   }
+
+
+    // --- középső doboz ---
+const box = document.createElement("div");
+box.style.border = "4px solid red";
+box.style.width = "800px";
+box.style.height = "400px";
+box.style.margin = "20px auto";
+box.style.padding = "20px";
+box.style.color = "red";
+
+// cím (ez lett a régi textContent)
+const boxTitle = document.createElement("h3");
+boxTitle.textContent = "This is a simple story about the band and other relevant information.";
+box.appendChild(boxTitle);
+
+// bekezdés
+const p1 = document.createElement("p");
+p1.textContent = "Itt jön az első bekezdés a zenekarról.";
+box.appendChild(p1);
+
+// második bekezdés
+const p2 = document.createElement("p");
+p2.textContent = "Ez a második bekezdés.";
+box.appendChild(p2);
+
+document.body.appendChild(box);
+  
 </script>
 </body>
 </html>
