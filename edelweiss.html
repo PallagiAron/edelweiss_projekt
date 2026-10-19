@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Edelweiss</title>
+</head>
+<body>
+<script>
+  // stilusok
+  document.body.style.background = "black";
+  document.body.style.color = "white";
+  document.body.style.fontFamily = "Verdana, sans-serif";
+
+  // cim stb
+  const title = document.createElement("h1");
+  title.textContent = "Edelweiss";
+  title.style.textAlign = "center";
+  title.img = document.createElement("img");
+  title.img.src = "images.jpg";
+  title.img.style.float = "right";    
+  title.appendChild(title.img);
+  document.body.appendChild(title);
+
+  // info szekcioa
+  const info = {
+    "Country of origin": "Hungary",
+    "Location": "Budapest",
+    "Status": "Active",
+    "Formed in": "2018",
+    "Genre": "Psychedelic Heavy/Doom Metal",
+  };
+
+  for (const label in info) {
+    const p = document.createElement("p");
+    p.textContent = label + ": " + info[label];
+    p.style.textAlign = "left";   
+    document.body.appendChild(p);
+  }
+
+  // albumok
+  const albums = [
+    { name: "205", type: "Full-length ", year: 2019 },
+    { name: "Behind Our Masks", type: "Full-length ", year: 2020 },
+    { name: "Night of the Long Pipes", type: "Full-length ", year: 2021 },
+    { name: "Nomen Est Omen", type: "Full-length ", year: 2022 },
+    { name: "White Flower Power", type: "Demo ", year: 2018 },
+  ];
+
+  const heading = document.createElement("h2");
+  heading.textContent = "Discography";
+  document.body.appendChild(heading);
+
+  const table = document.createElement("table");
+  document.body.appendChild(table);
+
+  for (const album of albums) {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${album.name}</td>
+      <td>${album.type}</td>
+      <td>${album.year}</td>`;
+    table.appendChild(row);
+  }
+</script>
+</body>
+</html>
